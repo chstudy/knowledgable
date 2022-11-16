@@ -17,7 +17,9 @@
   "directories": {
     "doc": "docs"
   },
-  "dependencies": {},
+  "dependencies": {
+    "moment": "^2.29.4"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://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@github.com/chstudy/knowledgable.git"

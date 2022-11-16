@@ -7,7 +7,18 @@ module.exports = {
     head: [
         ['link', {rel: 'icon', href: '/img/chbcjs.png'}],
         ['link', {rel: 'stylesheet', href: '/css/style.css'}],
-        ['script', {charset: 'utf-8', src: '/js/main.js'}]
+        ['script', {charset: 'utf-8', src: '/js/main.js'}],
+        [
+            'script', `<script>
+                var _hmt = _hmt || [];
+                (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?3f8fba7c877eb1d47402d98a0c737625";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+            </script>`
+        ]
     ],
     markdown: {
         lineNumbers: true
@@ -23,7 +34,7 @@ module.exports = {
         sidebar: require("./sidebar.js"),
         subSidebar: 'auto',
         sidebarDepth: 2,
-        lastUpdated: 'Last Updated',
+        lastUpdated: '上次更新',
         searchMaxSuggestoins: 10,
         serviceWorker: {
             updatePopup: {
@@ -33,5 +44,18 @@ module.exports = {
         },
         editLinks: true,
         editLinkText: '在 GitHub 上编辑此页 ！'
-    }
+    },
+    plugins: [
+        [
+            '@vuepress/last-updated',
+            {
+                transformer: (timestamp, lang) => {
+                    // 不要忘了安装 moment
+                    const moment = require('moment')
+                    moment.locale(lang)
+                    return moment(timestamp).fromNow()
+                }
+            }
+        ]
+    ]
 }

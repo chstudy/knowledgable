@@ -3,6 +3,7 @@ title: Java简介
 author: 沧海
 date: '2022-11-14'
 ---
+<LastUpdated />
 
 # 一级标题
 love yingying
@@ -29,3 +30,6 @@ sh test.sh && cd test
 ```mysql
 select * from user limit 10;
 ```
+
+
+
