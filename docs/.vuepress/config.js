@@ -9,7 +9,7 @@ module.exports = {
         ['link', {rel: 'stylesheet', href: '/css/style.css'}],
         ['script', {charset: 'utf-8', src: '/js/main.js'}],
         [
-            'script', `<script>
+            'script', `
                 var _hmt = _hmt || [];
                 (function() {
                 var hm = document.createElement("script");
