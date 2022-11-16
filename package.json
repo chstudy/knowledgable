@@ -1,7 +1,6 @@
 {
   "name": "knowledgable",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,5 +13,18 @@
   "devDependencies": {
     "vuepress": "^1.9.7",
     "vuepress-theme-reco": "^1.6.16"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/chstudy/knowledgable.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chstudy/knowledgable/issues"
+  },
+  "homepage": "https://github.com/chstudy/knowledgable#readme",
+  "description": ""
 }
