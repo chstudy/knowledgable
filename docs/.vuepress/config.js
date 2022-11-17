@@ -9,15 +9,14 @@ module.exports = {
         ['link', {rel: 'stylesheet', href: '/css/style.css'}],
         ['script', {charset: 'utf-8', src: '/js/main.js'}],
         [
-            'script', `
-                var _hmt = _hmt || [];
-                (function() {
+            'script', {},
+            `var _hmt = _hmt || [];
+            (function() {
                 var hm = document.createElement("script");
                 hm.src = "https://hm.baidu.com/hm.js?3f8fba7c877eb1d47402d98a0c737625";
                 var s = document.getElementsByTagName("script")[0];
                 s.parentNode.insertBefore(hm, s);
-            })();
-            </script>`
+            })();`
         ]
     ],
     markdown: {
@@ -55,6 +54,13 @@ module.exports = {
                     moment.locale(lang)
                     return moment(timestamp).fromNow()
                 }
+            }
+        ],
+        [
+            require('./vuepress-plugin-code-copy'),
+            {
+                'copybuttonText': '复制',
+                'copiedButtonText': '已复制！'
             }
         ]
     ]
