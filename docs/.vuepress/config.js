@@ -20,7 +20,17 @@ module.exports = {
         ]
     ],
     markdown: {
-        lineNumbers: true
+        lineNumbers: false,
+        extendMarkdown: md => {
+            md.use(function (md) {
+                const fence = md.renderer.rules.fence
+                md.renderer.rules.fence = (...args) => {
+                    let rawCode = fence(...args);
+                    // rawCode = rawCode.replace(/<span class="token comment">\/\/ try-link https:\/\/(.*)<\/span>\n/ig, '<a href="$1" class="try-button" target="_blank">Try</a>');
+                    return `${rawCode}`
+                }
+            })
+        }
     },
     locales: {
         '/': {
@@ -62,6 +72,14 @@ module.exports = {
                 'copybuttonText': '复制',
                 'copiedButtonText': '已复制！'
             }
+        ],
+        [
+            // (options, ctx) => {
+            //     return {
+            //         name: 'vuepress-plugin-code-try',
+            //         clientRootMixin: path.resolve(__dirname, 'vuepress-plugin-code-try/index.js')
+            //     }
+            // }
         ]
     ]
 }

@@ -45,7 +45,7 @@ export default {
   position: absolute;
   bottom: 10px;
   right: 7.5px;
-  opacity: 0.75;
+  opacity: 0.2;
   cursor: pointer;
   font-size: 14px;
 }
