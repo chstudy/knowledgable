@@ -82,12 +82,12 @@ module.exports = {
             }
         ],
         [
-            // (options, ctx) => {
-            //     return {
-            //         name: 'vuepress-plugin-code-try',
-            //         clientRootMixin: path.resolve(__dirname, 'vuepress-plugin-code-try/index.js')
-            //     }
-            // }
+            (options, ctx) => {
+                return {
+                    name: 'vuepress-plugin-code-try',
+                    clientRootMixin: path.resolve(__dirname, 'vuepress-plugin-code-try/index.js')
+                }
+            }
         ],
         [
             'copyright',

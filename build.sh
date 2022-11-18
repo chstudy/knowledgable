@@ -8,6 +8,11 @@ rm -rf dist
 # 生成静态文件
 npm run docs:build
 
+if [ $? -ne 0 ]; then
+    echo ">>> build failed!!";
+    exit
+fi
+
 # 进入生成的文件夹
 cd dist
 
