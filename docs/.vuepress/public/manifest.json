@@ -8,12 +8,12 @@
   "description": "Java知识结构",
   "icons": [
     {
-      "src": "logo52.png",
+      "src": "img/chbcjs.png",
       "sizes": "52x52",
       "type": "image/png"
     },
     {
-      "src": "logo288.png",
+      "src": "img/chbcjs.png",
       "sizes": "288x288",
       "type": "image/png"
     }
