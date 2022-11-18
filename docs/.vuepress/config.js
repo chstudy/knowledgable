@@ -26,14 +26,6 @@ module.exports = {
                 s.parentNode.insertBefore(hm, s);
             })();`
         ],
-        ['link', { rel: 'manifest', href: '/manifest.json' }],
-        ['meta', { name: 'theme-color', content: '#ffffff' }],
-        ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-        ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
-        ['link', { rel: 'apple-touch-icon', href: '/img/chbcjs.png' }],
-        ['link', { rel: 'mask-icon', href: '/img/chbcjs.png', color: '#ffffff' }],
-        ['meta', { name: 'msapplication-TileImage', content: '/img/chbcjs.png' }],
-        ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
     ],
     markdown: {
         lineNumbers: false,
@@ -131,16 +123,6 @@ module.exports = {
                 hideIcon: 'https://images.cnblogs.com/cnblogs_com/zcl-blog/1697160/t_221118070018_chbcjs.png',
                 hideText: '休息一下~',
                 recoverTime: 2000,
-            }
-        ],
-        [
-            '@vuepress/pwa',
-            {
-                serviceWorker: true,
-                updatePopup: {
-                    message: "发现新内容可用",
-                    buttonText: "刷新"
-                }
             }
         ]
     ]
