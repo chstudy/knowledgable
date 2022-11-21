@@ -24,8 +24,3 @@ vuepress build docs
 yarn build docs
 ```
 
-# 插件源码调整
-1、修改 vuepress-plugin-comments 源码，调整评论位置
-```html
-
-```

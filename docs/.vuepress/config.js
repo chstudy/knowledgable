@@ -26,6 +26,7 @@ module.exports = {
                 s.parentNode.insertBefore(hm, s);
             })();`
         ],
+        ['meta', { name: 'baidu-site-verification', content: 'code-Hs9xO2GSUA' }],
     ],
     markdown: {
         lineNumbers: false,
