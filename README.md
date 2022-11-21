@@ -17,3 +17,15 @@ vuepress dev docs
 # or 
 yarn run docs:dev
 ```
+4、build
+```shell
+vuepress build docs
+# or
+yarn build docs
+```
+
+# 插件源码调整
+1、修改 vuepress-plugin-comments 源码，调整评论位置
+```html
+
+```

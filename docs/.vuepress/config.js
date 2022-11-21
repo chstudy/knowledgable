@@ -60,17 +60,25 @@ module.exports = {
             }
         },
         editLinks: true,
-        editLinkText: '在 GitHub 上编辑此页 ！'
+        editLinkText: '在 GitHub 上编辑此页 ！',
+        // valineConfig: {
+        //     appId: 'OmzEr7EfKyCiBv3El5QCwJYe-gzGzoHsz',
+        //     appKey: 'WaJowe0aLDnpuBVsyZi5uEM6',
+        // }
+        // vssueConfig: {
+        //     platform: 'github',
+        //     owner: 'chstudy',
+        //     repo: 'knowledgable',
+        //     clientId: 'c6a9eb82fc501581c333',
+        //     clientSecret: '76680021413f9aa85cbab4bab575d3be09dbc7e5',
+        // }
     },
     plugins: [
         [
             '@vuepress/last-updated',
             {
                 transformer: (timestamp, lang) => {
-                    // 不要忘了安装 moment
-                    const moment = require('moment')
-                    moment.locale(lang)
-                    return moment(timestamp).fromNow()
+                    return new Date(timestamp).toLocaleDateString();
                 }
             }
         ],
@@ -124,6 +132,20 @@ module.exports = {
                 hideText: '休息一下~',
                 recoverTime: 2000,
             }
+        ],
+        [
+            //     '@vssue/vuepress-plugin-vssue', {
+            //     platform: 'github',
+            //     owner: 'chstudy',
+            //     repo: 'knowledgable',
+            //     clientId: 'c6a9eb82fc501581c333',
+            //     clientSecret: '76680021413f9aa85cbab4bab575d3be09dbc7e5',
+            // }
+        ],
+        [
+            'sitemap', {
+            hostname: 'https://chstudy.gitee.io/knowledgable'
+        }
         ]
     ]
 }
