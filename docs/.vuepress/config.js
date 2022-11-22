@@ -1,5 +1,7 @@
 const fs = require('fs')
 const path = require('path');
+const nav = require("./nav.js");
+const sidebar = require("./sidebar.js");
 
 module.exports = {
     title: '沧海自习室',
@@ -48,8 +50,8 @@ module.exports = {
     },
     theme: 'reco',
     themeConfig: {
-        nav: require("./nav.js"),
-        sidebar: require("./sidebar.js"),
+        nav,
+        sidebar,
         subSidebar: 'auto',
         sidebarDepth: 2,
         lastUpdated: '上次更新',
@@ -91,14 +93,6 @@ module.exports = {
             }
         ],
         [
-            (options, ctx) => {
-                return {
-                    name: 'vuepress-plugin-code-try',
-                    clientRootMixin: path.resolve(__dirname, 'vuepress-plugin-code-try/index.js')
-                }
-            }
-        ],
-        [
             'copyright',
             {
                 authorName: '沧海', // 选中的文字将无法被复制
@@ -113,6 +107,12 @@ module.exports = {
                         name: '雪下的时候',
                         artist: '乔家旭',
                         url: 'http://www.ytmp3.cn/down/76661.mp3',
+                        cover: 'https://p1.music.126.net/qTSIZ27qiFvRoKj-P30BiA==/109951165895951287.jpg?param=200y200'
+                    },
+                    {
+                        name: 'Attention',
+                        artist: 'Charlie Puth',
+                        url: 'https://www.ytmp3.cn/down/76820.mp3',
                         cover: 'https://p1.music.126.net/qTSIZ27qiFvRoKj-P30BiA==/109951165895951287.jpg?param=200y200'
                     }
                 ],

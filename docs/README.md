@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /img/chbcjs.png
-actionText: 开始自习 →
+actionText: 开始学习 →
 actionLink: /guide/
 features:
 - title: 简洁至上

@@ -1,16 +1,43 @@
 module.exports = [
+    {text: '主页', link: '/index.html'},
     {
-        text: 'Java知识结构体系', link: '/guide/',
+        text: 'Java', link: '/java/',
         items: [
-            {text: 'Java基础篇', link: '/interview/java-se/'},
-            {text: 'JavaWeb篇', link: '/interview/java-web/'}
+            {text: 'Java基础', link: '/java/java-beginner/'},
+            {text: 'Java基础进阶', link: '/java/java-intermediate/'},
+            {text: 'Java高级进阶', link: '/java/java-senior/'},
+            {text: 'JavaWeb', link: '/java/java-web/'},
+            {text: 'Java主流框架', link: '/java/frame/'},
+            {text: '分布式/微服务/并行架构', link: '/java/microservice/'},
+            {text: 'Java面试系列', link: '/java/interview/'},
+            {text: 'Java项目实战', link: '/java/projects/'},
+            {text: '源码系列', link: '/java/source-code/'},
         ]
     },
     {
-        text: 'Java面试秘籍',
+        text: '必学必会', link: '/must-know/',
         items: [
-            {text: 'Java基础篇', link: '/interview/java-se/'},
-            {text: 'JavaWeb篇', link: '/interview/java-web/'},
+            {text: 'Linux篇', link: '/must-know/linux/'},
+        ]
+    },
+    {
+        text: '内功心法', link: '/inner-mental/',
+        items: [
+            {text: '数据结构与算法', link: '/inner-mental/data-structure/'},
+            {text: '设计模式', link: '/inner-mental/design-pattern/'},
+        ]
+    },
+    {
+        text: '大数据', link: '/bigdata/',
+        items: [
+            {text: 'Hadoop', link: '/bigdata/hadoop/'},
+            {text: 'Hive', link: '/bigdata/hive/'},
+        ]
+    },
+    {
+        text: 'PHP',
+        items: [
+            {text: 'PHP基础', link: '/php/php-base/'},
         ]
     },
     {
