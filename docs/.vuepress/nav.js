@@ -38,6 +38,7 @@ module.exports = [
         text: 'PHP',
         items: [
             {text: 'PHP基础', link: '/php/php-base/'},
+            {text: 'PHP项目实战', link: '/php/php-projects/'},
         ]
     },
     {
