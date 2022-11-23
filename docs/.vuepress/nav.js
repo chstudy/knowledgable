@@ -10,7 +10,7 @@ module.exports = [
             {text: 'Java主流框架', link: '/java/frame/'},
             {text: '分布式/微服务/并行架构', link: '/java/microservice/'},
             {text: 'Java面试系列', link: '/java/interview/'},
-            {text: 'Java项目实战', link: '/java/projects/'},
+            {text: 'Java项目实战', link: '/java/java-projects/'},
             {text: '源码系列', link: '/java/source-code/'},
         ]
     },

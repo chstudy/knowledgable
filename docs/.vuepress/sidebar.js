@@ -7,9 +7,9 @@ module.exports = {
     '/java/java-web/': require('../java/java-web/sidebar'), //javaWeb
     '/java/frame/': require('../java/frame/sidebar'), //java框架
     '/java/microservice/': require('../java/microservice/sidebar'), //分布式/微服务/并发框架
-    '/java/projects/': require('../java/projects/sidebar'), //Java项目实战
-    '/java/interview/': require('../java/projects/sidebar'), //Java面试题
-    '/java/source-code/': require('../java/projects/sidebar'), //Java源码系列
+    '/java/java-projects/': require('../java/java-projects/sidebar'), //Java项目实战
+    '/java/interview/': require('../java/interview/sidebar'), //Java面试题
+    '/java/source-code/': require('../java/source-code/sidebar'), //Java源码系列
 
     '/bigdata/hadoop/': require('../bigdata/hadoop/sidebar'), //大数据-hadoop
     '/bigdata/hive/': require('../bigdata/hive/sidebar'), //大数据-hive

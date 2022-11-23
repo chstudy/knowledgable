@@ -1,9 +1,9 @@
 module.exports = [
     {
-        title: 'Hadoop篇',
+        title: '基础',
         collapsable: true,
         children: [
-            '/bigdata/hive/notes/hive-introduce',
+            '/must-know/linux/notes/linux-introduce',
         ]
     }
 ]
