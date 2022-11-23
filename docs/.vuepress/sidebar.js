@@ -1,5 +1,6 @@
 module.exports = {
-    '/guide/': require('../guide/sidebar'),//学习路线
+    '/guide/guide-java/': require('../guide/guide-java/sidebar'),//Java学习路线
+    '/guide/guide-c/': require('../guide/guide-c/sidebar'),//C学习路线
 
     '/java/java-beginner/': require('../java/java-beginner/sidebar'), //java基础
     '/java/java-intermediate/': require('../java/java-intermediate/sidebar'), //java基础进阶

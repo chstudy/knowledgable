@@ -1,7 +1,14 @@
 module.exports = [
     {text: '主页', link: '/index.html'},
     {
-        text: 'Java', link: '/java/',
+        text: '学习指南',
+        items: [
+            {text: 'Java学习路线', link: '/guide/guide-java/'},
+            {text: 'C学习路线', link: '/guide/guide-c/'},
+        ]
+    },
+    {
+        text: 'Java',
         items: [
             {text: 'Java基础', link: '/java/java-beginner/'},
             {text: 'Java基础进阶', link: '/java/java-intermediate/'},
@@ -15,20 +22,20 @@ module.exports = [
         ]
     },
     {
-        text: '必学必会', link: '/must-know/',
+        text: '必学必会',
         items: [
             {text: 'Linux篇', link: '/must-know/linux/'},
         ]
     },
     {
-        text: '内功心法', link: '/inner-mental/',
+        text: '内功心法',
         items: [
             {text: '数据结构与算法', link: '/inner-mental/data-structure/'},
             {text: '设计模式', link: '/inner-mental/design-pattern/'},
         ]
     },
     {
-        text: '大数据', link: '/bigdata/',
+        text: '大数据',
         items: [
             {text: 'Hadoop', link: '/bigdata/hadoop/'},
             {text: 'Hive', link: '/bigdata/hive/'},
