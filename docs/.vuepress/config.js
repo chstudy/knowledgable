@@ -7,7 +7,7 @@ module.exports = {
     title: '沧海自习室',
     description: '感谢你那么好看还来到了沧海的自习室！',
     dest: './dist',
-    base: '/',
+    base: '/knowledgable/',
     devServer: {
         https: true,
         key: fs.readFileSync(path.resolve(__dirname, './localhost+1-key.pem')),
