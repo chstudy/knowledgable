@@ -112,7 +112,7 @@ module.exports = {
                     {
                         name: 'Attention',
                         artist: 'Charlie Puth',
-                        url: 'https://www.ytmp3.cn/down/76820.mp3',
+                        url: 'https://www.ytmp3.cn/down/51180.mp3',
                         cover: 'https://p1.music.126.net/qTSIZ27qiFvRoKj-P30BiA==/109951165895951287.jpg?param=200y200'
                     }
                 ],
